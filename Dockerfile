@@ -1,8 +1,4 @@
---- 
-steps: 
-  - 
-    args: 
-      - "clean install"
-      - "-t"
-      - gcr.io/my-project/my-image
-      - "."
+steps:
+# Build the Docker image.
+- name: gcr.io/cloud-builders/docker
+  args: ['build', '-t', 'gcr.io/my-project/my-image', '.']
