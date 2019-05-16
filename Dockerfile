@@ -1,2 +1,2 @@
 steps:
-  args: ['build', '-t', 'gcr.io/my-project/my-image', '.']
+  args: ['clean install', '-t', 'gcr.io/my-project/my-image', '.']
